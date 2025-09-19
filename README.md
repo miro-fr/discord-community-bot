@@ -171,7 +171,7 @@ npm run build; pm2 start ./dist/index.js --name discord-community-bot
 
 ## Licence
 
-Ce projet est sous licence **GNU GENERAL PUBLIC** (voir `LICENSE` si présent).
+Ce projet est sous licence **GNU GENERAL PUBLIC** (voir `LICENSE`).
 
 ---
 
@@ -181,3 +181,4 @@ Ce projet est sous licence **GNU GENERAL PUBLIC** (voir `LICENSE` si présent).
 * [Profil Discord](https://discord.com/users/690749637921079366)
 
 ---
+
