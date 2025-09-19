@@ -1,0 +1,33 @@
+{
+  "name": "discord-community-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot for community management with role and permission handling.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node -r ./polyfill.js ./dist/index.js",
+    "start:dev": "node -r ./polyfill.js -r ts-node/register src/index.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "community",
+    "roles",
+    "permissions"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.0.0",
+    "dotenv": "^10.0.0",
+    "web-streams-polyfill": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.0",
+    "@types/node": "^16.18.126",
+    "jest": "^27.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "generated_by": "GitHub Copilot",
+    "version": 1,
+    "note": "Ce fichier contient la structure (rôles + catégories + salons). Le bot crée les rôles dans l'ordre et les catégories/salons, en évitant les doublons. Ajustez les permissions si nécessaire."
+  },
+  "roles": [
+    "👑 Direction Suprême",
+    "👑 Fondateur",
+    "🦅 Co-Fondateur",
+    "🔮 Architecte Suprême",
+
+    "🚀 Élite Tech – Haute Autorité",
+    "🧬 Architecte",
+    "🛰️ Observateur",
+    "🔮 Analyste",
+    "⚡ Runner",
+
+    "🛡️ Modération – Perm Mute",
+    "🦾 Sentinelle (Perm VI)",
+    "🧩 Technicien (Perm V)",
+    "📡 Drone (Perm IV)",
+
+    "🏆 Rôles Décoratifs – Prestige",
+    "🌌 Spectre",
+    "💠 Nexus",
+    "⚙️ Prototype",
+
+    "🔧 Membres actifs – Progression sociale",
+    "🛠️ Opérateur (Perm III)",
+    "💾 Programmeur (Perm II)",
+    "🔗 Initié (Perm I)",
+    "🎓 Apprenti",
+    "⚙️ Alternant",
+    "🧱 Ouvrier",
+    "💼 Employé",
+
+    "🌟 Rôles Spéciaux",
+    "🌹 Légende",
+    "🗡️ Gardien",
+    "🎤 Streamer",
+    "🎥 VIP",
+    "💎 Booster",
+    "✅ Membre confirmé",
+
+    "@everyone"
+  ],
+  "categories": [
+    {
+      "name": "📌 ACCUEIL",
+      "children": [
+        "📕・guide-du-serveur",
+        "🚨・voir-tous-les-salons",
+        "❗・important",
+        "🏆・salle-des-trophées"
+      ]
+    },
+    {
+      "name": "📊 INFORMATIONS",
+      "children": [
+        "📜・règlement",
+        "📢・annonce",
+        "📑・hiérarchie",
+        "⚠️・sanctions",
+        "👋・arrivées",
+        "💎・boosts"
+      ]
+    },
+    {
+      "name": "👮 STAFF (privé)",
+      "private": true,
+      "allowedRoles": [
+        "👑 Direction Suprême",
+        "👑 Fondateur",
+        "🦅 Co-Fondateur",
+        "🔮 Architecte Suprême"
+      ],
+      "children": [
+        "🔒・retour-staff",
+        "⬇️・derank",
+        "📢・annonce-staff",
+        "💬・chat-staff",
+        "⌨️・commandes-staff",
+        "💤・absences-staff",
+        "⛔・pub-mp"
+      ]
+    },
+    {
+      "name": "📂 LOGS (privé)",
+      "private": true,
+      "allowedRoles": [
+        "👑 Direction Suprême",
+        "👑 Fondateur",
+        "🦅 Co-Fondateur",
+        "🔮 Architecte Suprême",
+        "🦾 Sentinelle (Perm VI)"
+      ],
+      "children": [
+        "📂・logs-modération",
+        "📂・logs-role",
+        "📂・logs-message",
+        "📂・logs-vocal",
+        "📂・logs-invite"
+      ]
+    },
+    {
+      "name": "🎟️ SUPPORT",
+      "children": [
+        "🎫・ouvrir-un-ticket",
+        "🔊・Besoin d’aide",
+        "❓・Support Vocal (1)",
+        "❓・Support Vocal (2)"
+      ]
+    },
+    {
+      "name": "💬 DISCUSSIONS",
+      "children": [
+        "💭・chat",
+        "📸・média",
+        "🤳・selfie",
+        "🎨・vos-créations",
+        "🖥️・setup",
+        "🍔・food",
+        "🔢・compteur",
+        "⚙️・commandes",
+        "💡・boîte-à-idées"
+      ]
+    },
+    {
+      "name": "🎁 GIVEAWAY",
+      "children": [
+        "🎁・décoration-profil",
+        "🎁・nitro-boost",
+        "🔍・preuves"
+      ]
+    },
+    {
+      "name": "🔊 VOCAUX",
+      "voice": true,
+      "children": [
+        "🎥・Stream #1",
+        "📹・Only Cam",
+        "🦋・Vocal 1",
+        "🎤・Vocal 2",
+        "🌹・Vocal 3",
+        "🍓・Vocal 4",
+        "🍅・Vocal 5",
+        "🍊・Vocal 6",
+        "🍊・Vocal 7",
+        "🎧・Vocal 8",
+        "🦊・Vocal 9",
+        "🐯・Vocal 10",
+        "🐮・Vocal 11",
+        "🌵・Vocal 12",
+        "🍀・Vocal 13",
+        "🌻・Vocal 14",
+        "🌿・Vocal 15",
+        "🍍・Vocal 16",
+        "🍋・Vocal 17",
+        "🍉・Vocal 18",
+        "⭐・Vocal 19",
+        "🌙・Vocal 20"
+      ]
+    },
+    {
+      "name": "😴 AFK FARM",
+      "voice": true,
+      "children": [
+        "💤・AFK",
+        "💤・AFK (2)",
+        "💤・AFK (3)",
+        "💤・AFK (4)",
+        "💤・AFK (5)",
+        "💤・AFK (6)",
+        "💤・AFK (7)",
+        "💤・AFK (8)",
+        "💤・AFK (9)",
+        "💤・AFK (10)"
+      ]
+    }
+  ],
+  "baseRole": "@everyone"
+}
