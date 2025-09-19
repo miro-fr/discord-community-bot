@@ -6,19 +6,18 @@ Un bot Discord orienté gestion de communauté, avec gestion des rôles, permiss
 
 ## Table des matières
 
-- **Présentation**: Bref aperçu du projet
-- **Fonctionnalités**: Liste des fonctionnalités principales
-- **Structure du projet**: Organisation des fichiers
-- **Prérequis**: Logiciels et versions requises
-- **Installation**: Instructions pour cloner et installer
-- **Configuration**: Variables d'environnement et fichiers à configurer
-- **Scripts NPM**: Commandes utiles pour développement et production
-- **Architecture & Principes**: Description des composants principaux
-- **Développement**: Guide rapide pour contribuer et ajouter des commandes
-- **Tests**: Comment exécuter et ajouter des tests
-- **Déploiement**: Conseils pour déployer le bot en production
-- **FAQ & Dépannage**: Problèmes communs et solutions
-- **Licence**: Informations de licence
+- [Présentation](#présentation)
+- [Fonctionnalités](#fonctionnalités)
+- [Prérequis](#prérequis)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Scripts NPM](#scripts-utiles)
+- [Architecture & Principes](#architecture--principes)
+- [Développement](#développement)
+- [Tests](#tests)
+- [Déploiement](#déploiement)
+- [FAQ & Dépannage](#faq--dépannage)
+- [Licence](#licence)
 
 ---
 
@@ -37,20 +36,7 @@ Le point d'entrée du projet est `src/index.ts` et le code est transpilé avec T
 - Commandes utilisateurs pour afficher des informations
 - Intégration avec `discord.js` v14
 
-## Structure du projet
-
-- `src/` : Code source TypeScript
-  - `commands/` : Implémentation des commandes (admin, moderator, user)
-  - `events/` : Gestionnaires d'événements Discord (`ready`, `messageCreate`, `guildMemberAdd`, ...)
-  - `services/` : Services réutilisables (channel, role, base de données locale)
-  - `handlers/` : Logique pour dispatcher les commandes et permissions
-  - `config/` : Configuration centrale
-  - `data/` : Données locales (ex: `database.json`)
-  - `utils/` : Utilitaires (logger, helpers)
-- `tests/` : Tests unitaires (Jest)
-- `polyfill.js` : Polyfill requis pour certaines versions de Node/discord.js
-- `package.json` : Scripts et dépendances
-- `tsconfig.json` : Configuration TypeScript
+<!-- Section 'Structure du projet' supprimée à la demande. -->
 
 ## Prérequis
 
@@ -185,7 +171,7 @@ npm run build; pm2 start ./dist/index.js --name discord-community-bot
 
 ## Licence
 
-Ce projet est sous licence  **GNU GENERAL PUBLIC** (voir `LICENSE` si présent).
+Ce projet est sous licence **GNU GENERAL PUBLIC** (voir `LICENSE` si présent).
 
 ---
 
@@ -195,4 +181,3 @@ Ce projet est sous licence  **GNU GENERAL PUBLIC** (voir `LICENSE` si présent).
 * [Profil Discord](https://discord.com/users/690749637921079366)
 
 ---
-
